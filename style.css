@@ -39,6 +39,9 @@ body {
 }
 
 .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 50px;
 }
 
@@ -51,7 +54,6 @@ button {
     font-size: 1rem;
     cursor: pointer;
     margin: 0 10px;
-    text-align: center;
     width: 70px;
     height: 70px;
     transition: background-color 0.3s;
@@ -74,18 +76,26 @@ button:hover {
     align-items: center;
     
 }
-
+#pause{
+    padding: 10px;
+}
+#start{
+    padding: 10px;
+}
+#reset{
+    padding: 10px;
+}
 .outer-circle{
     width: 230px;
     height: 230px;
     border-radius: 50%;
     margin: 0px auto;
-    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/*
 .animation-bg{
     background: linear-gradient(-45deg, #ee7752, #00ff26, #fbff00, #00bef2, #0050fd, #f900d8, #d900ff);
     background-size: 400% 400%;
@@ -102,7 +112,7 @@ button:hover {
     100%{
         background-position: 0% 50%;
     }
-}
+}*/
 
 #clear-laps {
     margin-top: 20px;
@@ -113,6 +123,7 @@ button:hover {
     color: #fff;
     border: none;
     font-size: 1rem;
+    width: 100px;
 }
 
 #clear-laps:hover {
